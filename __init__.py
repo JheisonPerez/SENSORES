@@ -32,7 +32,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info(conStringAzure)
     cnxnAzure = pyodbc.connect(conStringAzure) #CONECTMOS A LA INFORMACION DEL .FORMAT
     logging.info('Conexión establecida con la base de datos Azure.')
-    traceDB(cnxnAzure,ID,'Inicio servicio web.PRUEBA LOCAL, ENTREGA 10% VIDEO') #CONECTAR A LA BASE DE DATOS
+    traceDB(cnxnAzure,ID,'Inicio servicio web.PRUEBA LOCAL, prueba cambio') #CONECTAR A LA BASE DE DATOS
 
     logging.info('Obtiene parámetros del JSON.')
     traceDB(cnxnAzure,ID,'Parámetros del servicio recibidos.')
